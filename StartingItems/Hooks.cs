@@ -15,14 +15,20 @@ namespace Basil_ror2
                 {
                     foreach(CharacterMaster cm in CharacterMaster.readOnlyInstancesList)
                     {
-                        cm.inventory.GiveItem((ItemIndex)0, 20);
-                        cm.inventory.GiveItem((ItemIndex)8, 20);
-                        cm.inventory.GiveItem((ItemIndex)9, 20);
-                        cm.inventory.GiveItem((ItemIndex)15, 1);
-                        cm.inventory.GiveItem((ItemIndex)29, 5);
-                        cm.inventory.GiveItem((ItemIndex)30, 16);
-                        cm.inventory.GiveItem((ItemIndex)35, 10);
-                        cm.inventory.GiveItem((ItemIndex)82, 1);
+                        if(cm.teamIndex == TeamIndex.Player)
+                        { 
+                            cm.inventory.GiveItem((ItemIndex)0, 20);
+                            cm.inventory.GiveItem((ItemIndex)8, 20);
+                            cm.inventory.GiveItem((ItemIndex)9, 20);
+                            cm.inventory.GiveItem((ItemIndex)15, 1);
+                            cm.inventory.GiveItem((ItemIndex)29, 5);
+                            cm.inventory.GiveItem((ItemIndex)30, 16);
+                            cm.inventory.GiveItem((ItemIndex)35, 10);
+                            cm.inventory.GiveItem((ItemIndex)82, 1);
+                            cm.inventory.GiveItem((ItemIndex)103, 1);
+                            cm.GiveMoney(10000);
+                            cm.inventory.GiveEquipmentString("DroneBackup");
+                        }
                     }
                 }
             };
