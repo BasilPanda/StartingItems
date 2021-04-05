@@ -29,6 +29,7 @@ namespace Basil_ror2
                             cm.inventory.GiveItem(RoR2Content.Items.Squid, 1);
                             cm.inventory.GiveItem(RoR2Content.Items.ChainLightning, 50);
                             cm.inventory.GiveItem(RoR2Content.Items.LunarBadLuck, 8);
+                            cm.inventory.GiveItem(RoR2Content.Items.ExtraLife, 2);
                             cm.GiveMoney(100000);
                             cm.inventory.GiveEquipmentString("DroneBackup");
                         }
