@@ -16,17 +16,20 @@ namespace Basil_ror2
                     foreach(CharacterMaster cm in CharacterMaster.readOnlyInstancesList)
                     {
                         if(cm.teamIndex == TeamIndex.Player)
-                        { 
-                            cm.inventory.GiveItem((ItemIndex)0, 20);
-                            cm.inventory.GiveItem((ItemIndex)8, 20);
-                            cm.inventory.GiveItem((ItemIndex)9, 20);
-                            cm.inventory.GiveItem((ItemIndex)15, 1);
-                            cm.inventory.GiveItem((ItemIndex)29, 5);
-                            cm.inventory.GiveItem((ItemIndex)30, 16);
-                            cm.inventory.GiveItem((ItemIndex)35, 10);
-                            cm.inventory.GiveItem((ItemIndex)82, 1);
-                            cm.inventory.GiveItem((ItemIndex)103, 1);
-                            cm.GiveMoney(10000);
+                        {
+                            cm.inventory.GiveItem(RoR2Content.Items.Syringe, 20);
+                            cm.inventory.GiveItem(RoR2Content.Items.Feather, 20);
+                            cm.inventory.GiveItem(RoR2Content.Items.Hoof, 20);
+                            cm.inventory.GiveItem(RoR2Content.Items.GhostOnKill, 1);
+                            cm.inventory.GiveItem(RoR2Content.Items.PersonalShield, 5);
+                            cm.inventory.GiveItem(RoR2Content.Items.EquipmentMagazine, 16);
+                            cm.inventory.GiveItem(RoR2Content.Items.BeetleGland, 1);
+                            cm.inventory.GiveItem(RoR2Content.Items.Clover, 10);
+                            cm.inventory.GiveItem(RoR2Content.Items.TitanGoldDuringTP, 1);
+                            cm.inventory.GiveItem(RoR2Content.Items.Squid, 1);
+                            cm.inventory.GiveItem(RoR2Content.Items.ChainLightning, 50);
+                            cm.inventory.GiveItem(RoR2Content.Items.LunarBadLuck, 8);
+                            cm.GiveMoney(100000);
                             cm.inventory.GiveEquipmentString("DroneBackup");
                         }
                     }
